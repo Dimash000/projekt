@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Castaway</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+	<style>
+		body {
+			margin: 0;
+			font-family: 'Segoe UI', sans-serif;
+			background-color: #0f0f0f;
+			color: white;
+		}
+
+		.container {
+			max-width: 1200px;
+			margin: auto;
+			padding: 20px;
+		}
+
+		.header {
+			background: #0f0f0f;
+			padding: 20px 0;
+			border-bottom: 1px solid #333;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.logo {
+			font-size: 24px;
+			font-weight: bold;
+		}
+
+		.nav a {
+			color: white;
+			margin-left: 20px;
+			text-decoration: none;
+			font-size: 16px;
+		}
+
+		.hero {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: #141414;
+			padding: 50px 0;
+			border-bottom: 2px solid #ffc107;
+		}
+
+		.hero-content {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			gap: 50px;
+		}
+
+		.hero-image img {
+			width: 300px;
+			border-radius: 10px;
+		}
+
+		.hero-text h2 {
+			font-size: 36px;
+			max-width: 400px;
+		}
+
+		.hero-text h2 span {
+			color: white;
+			background-color: #00d8ff;
+			padding: 2px 6px;
+			border-radius: 4px;
+		}
+
+		.platforms i {
+			font-size: 24px;
+			margin: 10px 10px 0 0;
+			color: #ccc;
+		}
+
+		.episodes {
+			background: #1c1c1c;
+			padding: 40px 0;
+		}
+
+		.section-header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.btn {
+			background-color: #00bfff;
+			color: white;
+			padding: 10px 20px;
+			text-decoration: none;
+			border-radius: 5px;
+		}
+
+		.episode-card {
+			background: #222;
+			margin-top: 20px;
+			display: flex;
+			align-items: center;
+			border-radius: 8px;
+			overflow: hidden;
+		}
+
+		.episode-card img {
+			width: 150px;
+		}
+
+		.episode-info {
+			padding: 20px;
+		}
+
+		/* Responsive design */
+		@media (max-width: 768px) {
+			.hero-content {
+				flex-direction: column;
+				text-align: center;
+			}
+
+			.section-header {
+				flex-direction: column;
+				gap: 20px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- Header -->
+	<header class="header container">
+		<div class="logo">Castaway</div>
+		<nav class="nav">
+			<a href="#">Home</a>
+			<a href="#">Episodes</a>
+			<a href="#">About</a>
+			<a href="#">Contact</a>
+		</nav>
+	</header>
+
+	<!-- Hero Section -->
+	<section class="hero">
+		<div class="container hero-content">
+			<div class="hero-image">
+				<img src="https://images.unsplash.com/photo-1602526432507-d40e8fb9d9ae" alt="Podcast host" />
+			</div>
+			<div class="hero-text">
+				<h2>Take your podcast to the next <span>level</span></h2>
+				<p>Listen on:</p>
+				<div class="platforms">
+					<i class="fab fa-spotify"></i>
+					<i class="fab fa-apple"></i>
+					<i class="fab fa-google"></i>
+					<i class="fab fa-soundcloud"></i>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Episodes Section -->
+	<section class="episodes">
+		<div class="container">
+			<div class="section-header">
+				<h2>Latest episodes</h2>
+				<a href="#" class="btn">View all episodes</a>
+			</div>
+			<div class="episode-card">
+				<img src="https://images.unsplash.com/photo-1585386959984-a415522ad4c9" alt="Episode gear" />
+				<div class="episode-info">
+					<p>Gear</p>
+					<h3>Episode 1</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</body>
+
+</html>
